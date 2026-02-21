@@ -3,6 +3,7 @@ body {
   background-color: rgb(4, 78, 54);
   color: rgb(235, 211, 117);
   border-color: aquamarine;
+  animation: fadeInUp 3s ease-out;
 }
 p {
   margin-left: 100px;
@@ -23,4 +24,14 @@ a:hover {
   border: 2px solid #5407ce;
   border-radius: 5px;
   display: inline-block;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-75px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
