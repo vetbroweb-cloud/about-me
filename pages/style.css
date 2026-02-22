@@ -3,11 +3,20 @@ body {
   color: #333333; /* dark charcoal for readability */
   text-align: center;
   /* 1. Point to your local file */
-  background-image: url("../images/family-pic.jpg.jpg");
   background-size: cover; /* Makes it fill the screen */
   background-attachment: fixed; /* Keeps the paper still while you scroll */
   background-position: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body.home-page {
+  background-image: url(../images/sports-work.jpg);
+}
+body.projects-page {
+  background-color: black;
+  animation: mymove 15s linear;
+}
+body.family-page {
+  background-image: url(../images/family-pic.jpg.jpg);
 }
 p {
   /* 1. The "Frosted Glass" Effect */
@@ -52,6 +61,19 @@ a:hover {
   border: 2px solid #000005; /* darker blue border */
   border-radius: 5px;
   display: inline-block;
+  color: rgb(255, 1, 1) !important;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 0 #066b4a;
+  text-decoration: none;
+}
+.button-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px #000005;
+  filter: brightness(1.1);
+}
+.button-link:active {
+  transform: translateY(2px); /* Pushes the button down when clicked */
+  box-shadow: 0 1px 0 #066b4a;
 }
 h1,
 h2 {
@@ -85,10 +107,25 @@ hr {
   }
 }
 @keyframes mymove {
-  from {
-    background-color: #099c6d;
+  0% {
+    background-color: orange;
   }
-  to {
-    background-color: aqua;
+  17% {
+    background-color: yellow;
+  }
+  34% {
+    background-color: yellowgreen;
+  }
+  51% {
+    background-color: crimson;
+  }
+  68% {
+    background-color: blueviolet;
+  }
+  85% {
+    background-color: #e30909;
+  }
+  100% {
+    background-color: black;
   }
 }
